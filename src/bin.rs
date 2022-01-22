@@ -1,10 +1,9 @@
 use hex;
 use blockchain::{Blockchain, Transaction};
 use serde_json;
-use std::fs;
 use rand_core::OsRng;
 use k256::{
-    ecdsa::{SigningKey, Signature, signature::{Signer, Verifier}, VerifyingKey}
+    ecdsa::{SigningKey}
 };
 
 #[tokio::main]
