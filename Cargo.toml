@@ -1,0 +1,21 @@
+[package]
+name = "blockchain"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "blockchain"
+path = "src/lib.rs"
+
+[[bin]]
+name = "blockchain"
+path = "src/bin.rs"
+
+[dependencies]
+sha2 = "0.10.1"
+hex = "0.4.3"
+chrono = { version = "0.4", features = ["serde", "rustc-serialize"] }
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.2.1"
+serde_json = "1.0.76"
+
